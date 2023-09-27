@@ -1,0 +1,64 @@
+/* BlogPost.css */
+
+.blog-post {
+  /* sets the background color of each blog post to white. */
+    background-color: #fff;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* BlogPost.css */
+
+
+  
+  /* Style for the full post overlay */
+  .blog-post.active {
+    /* fixes the position of the element to the viewport, making it cover the entire screen. */
+    position: fixed;
+    /* set the overlay to cover the entire viewport. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* center the content both horizontally and vertically within the overlay. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .full-post {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .full-post p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .full-post button {
+    background-color: #333;
+    color: #fff;
+    /* removes the border of the button. */
+    border: none;
+    padding: 10px 20px;
+
+    /* adds 10 pixels of margin at the top of the button, creating spacing. */
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .full-post button:hover {
+    /* button is hovered over, it changes the background color to a darker gray, providing visual feedback. */
+    background-color: #555;
+  }
+  

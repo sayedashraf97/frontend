@@ -1,0 +1,63 @@
+/* BlogList.css */
+
+.blog-list {
+  /*  display property to 'grid', which means the element and its children will be displayed as a grid. */
+  display: grid;
+
+  /* created a 2x2 grid with two equal-sized columns. Each column takes up an equal fraction of the available space  */
+  grid-template-columns: repeat(2, 1fr); /* Create a 2x2 grid (4 equal parts) */
+
+  /* adds a 20-pixel gap between grid items*/
+  gap: 20px;
+}
+
+/* Apply layout styles to each grid item */
+.blog-post-container {
+
+  /* sets the background color of each container to white. */
+  background-color: #fff;
+
+  border-radius: 8px;
+
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  /* adds a smooth transition effect to the transform property, making it gradually change over 0.2 seconds with an ease-in-out timing function. */
+  transition: transform 0.2s ease-in-out;
+}
+
+.blog-post-container img {
+
+  /* images don't exceed their parent container's width, maintaining their aspect ratio. */
+  max-width: 100%;
+
+  /* image's height adjusts proportionally to its width, preventing distortion. */
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-post-container h2 {
+
+  /* the font size for h2 elements to 1.5 times the root font size, making them larger than normal text. */
+  font-size: 1.5rem;
+
+  /* adds 10 pixels of margin at the top and bottom of h2 elements, creating spacing around the heading. */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-post-container p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Hover state styles */
+.blog-post-container:hover {
+
+  /* scales (enlarges) the container by 3% when hovered, creating a slight zoom-in effect. */
+  transform: scale(1.03);
+
+  /*  larger box shadow with more pronounced elevation when hovered, giving the appearance of depth. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
